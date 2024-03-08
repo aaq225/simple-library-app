@@ -1,3 +1,8 @@
+/*
+Abdelrahman Qamhia - aaq225
+CSE264 - Programming Assignment 4
+Library App Client Side Script
+*/
 function addToDropDown(select, elements) {
   $(select).empty();
   // making a placeholder option with text to indicate to the user what to do. this is needed because the select optioned are removed above
@@ -51,7 +56,7 @@ $("#add").click(() => {
     success: function (response) {
       addToDropDown("#knownAuthorsDropdown", response.knownAuthors);
       addToDropDown("#knownPublishersDropdown", response.knownPublishers);
-      createTable(response.books); // creating the table from the object books
+      // createTable(response.books); // creating the table from the object books - removed this after reading piazza post about only updating on list
       // make the textboxes blank again for next book 
       $("#title").val('');
       $("#author").val('');
@@ -78,7 +83,7 @@ $("#list").click(() => {
         // creating the table from the object books
         createTable(response.books);
         // the table I have in HTML structure is set to display:none meaning it is initialliy hidden
-        $("#libraryTable").show();
+        $("#libraryTable").show(); // display my hidden table
       },
       error: function (jqXHR, textStatus, errorThrown) {
         alert("Error: " + jqXHR.responseText);
