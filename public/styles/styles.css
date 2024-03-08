@@ -2,19 +2,27 @@
 Abdelrahman Qamhia - aaq225
 CSE264 - Programming Assignment 4
 Library App Styles
+
+Analogous Colors:
+#80888F
+#8A9599
+#818282
+#8A9995 
+#808F87
 */
  body {
      display: flex;
      justify-content: center;
      align-items: center;
      height: 100vh;
-     font-family: Helvetica, Arial, sans-serif
+     font-family: Helvetica, Arial, sans-serif;
  }
 
  #container {
      border: 1px solid black;
      padding: 10px;
      border-radius: 20px;
+     background-color: #80888F;
  }
 
  form {
@@ -50,15 +58,16 @@ Library App Styles
      margin-right: 10px;
  }
 
-
  .checkboxes {
      display: flex;
      align-items: center;
      margin-right: 0px;
  }
 
- .checkbox-label {
-     white-space: nowrap;
+ .checkboxes label {
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 14px; 
  }
 
  .action-btns {
@@ -74,3 +83,33 @@ Library App Styles
      color: blue;
      border-radius: 20px;
  }
+
+ #libraryTable {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 20px;  
+  }
+  
+  #libraryTable th,
+  #libraryTable td {
+    border: 1px solid black; 
+    padding: 8px;    
+    text-align: center;   
+  }
+  
+  
+  .action-btns button {
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;    
+    margin: 4px 2px;    
+  }
+  
+  #add, #list {
+    color: #818282;
+  }
+  
+label {
+    font-size:20px;
+}
+
