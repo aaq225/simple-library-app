@@ -46,9 +46,14 @@ app.get('/add', (req, res) => {
 });
 
 app.get('/list', (req, res) => {
-  // resonding with the list of books
+  // resonding with the list of knownAuthors, knownPublishers, and list of books
   res.end(JSON.stringify({ books: bookList }));
 });
+
+app.get('/load', (req, res) => {
+  res.json({ knownAuthors, knownPublishers });
+});
+
 
 app.listen(3000);
 
