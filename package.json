@@ -1,0 +1,16 @@
+{
+  "name": "prog4-aaq225",
+  "version": "1.0.0",
+  "description": "Prog-Assignment-4",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aaq225",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.0"
+  }
+}
